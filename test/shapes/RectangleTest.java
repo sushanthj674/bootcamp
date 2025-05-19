@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RectangleTest {
     @Test
-    void positiveArea() {
+    void calculatesArea() {
         Rectangle rectangle = new Rectangle(2, 3);
         assertEquals(rectangle.area(),6,"should return area of rectangle");
     }
 
     @Test
-     void calculatesZeroLength() {
+     void calculatesZeroLengthArea() {
         Rectangle rectangle = new Rectangle(0, 3);
         assertEquals(rectangle.area(),0,"should return 0 area of rectangle if length 0");
     }
@@ -24,7 +24,7 @@ class RectangleTest {
     }
 
     @Test
-    void shouldReturnPerimeter() {
+    void calculatePerimeter() {
         Rectangle rectangle = new Rectangle(2, 3);
         assertEquals(rectangle.perimeter(),10,"should return valid perimeter");
     }
