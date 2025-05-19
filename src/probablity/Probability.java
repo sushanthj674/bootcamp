@@ -10,8 +10,6 @@ public class Probability {
     public Probability(double chance) {
         this.chance = chance;
     }
-
-
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
