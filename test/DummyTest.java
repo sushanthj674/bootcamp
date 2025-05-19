@@ -8,4 +8,5 @@ class DummyTest {
 
         assertEquals(Dummy.add(2,3),5, "expected 5");
     }
+
 }
