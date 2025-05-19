@@ -9,8 +9,8 @@ public class Rectangle implements quadrilateral{
         this.breadth = breadth;
     }
 
+    @Override
     public int area() {
-        
         return length * breadth;
     }
 

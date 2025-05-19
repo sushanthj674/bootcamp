@@ -7,6 +7,7 @@ public class Square  implements quadrilateral{
         this.side = side;
     }
 
+
     @Override
     public int area() {
         return side*side;
