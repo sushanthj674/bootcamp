@@ -36,4 +36,8 @@ public class Probability {
     public Probability and(Probability p2) {
         return new Probability(chance * p2.chance);
     }
+
+    public Probability or(Probability p2) {
+        return new Probability((chance + p2.chance) - (chance * p2.chance));
+    }
 }

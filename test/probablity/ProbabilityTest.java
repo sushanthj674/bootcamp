@@ -35,6 +35,12 @@ class ProbabilityTest {
         assertEquals(result,Probability.createInstance(0.25));
     }
 
-
-
+    @Test
+    void or() {
+        Probability p1 = Probability.createInstance(0.5);
+        Probability p2 = Probability.createInstance(0.5);
+        Probability result = p1.or(p2);
+        assert( result instanceof Probability);
+        assertEquals(result,Probability.createInstance(0.75));
+    }
 }
