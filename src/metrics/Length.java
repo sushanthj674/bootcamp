@@ -1,7 +1,5 @@
 package metrics;
 
-import volume.Quantity;
-
 import java.util.Objects;
 
 public class Length {
@@ -42,7 +40,7 @@ public class Length {
         return new Length((i * 254)/10);
     }
 
-    public Length addIn(Length i2) {
+    public Length add(Length i2) {
         return new Length(units + i2.units);
     }
 }
