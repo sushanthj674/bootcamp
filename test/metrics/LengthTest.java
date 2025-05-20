@@ -46,10 +46,18 @@ class LengthTest  {
     }
 
     @Test
-    void add() {
+    void addSame() {
         Length i1 = Length.createInches(2);
         Length i2 = Length.createInches(2);
         Length result = Length.createInches(4);
         assertEquals(i1.add(i2), result);
     }
+    @Test
+    void addDiff() {
+        Length i1 = Length.createCm(2.54);
+        Length i2 = Length.createInches(1);
+        Length result = Length.createInches(2);
+        assertEquals(i1.add(i2), result);
+    }
+
 }
