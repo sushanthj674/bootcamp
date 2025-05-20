@@ -42,9 +42,6 @@ public class Length {
     }
 
     public Length add(Length i2) {
-        System.out.println(value );
-        System.out.println(i2.value);
-        System.out.println(value+i2.value);
         return new Length(value + i2.value, LengthUnits.IN);
     }
 }

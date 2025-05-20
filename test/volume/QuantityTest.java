@@ -20,4 +20,12 @@ class QuantityTest {
         Quantity liters = Quantity.createLiters(3.78);
         assertEquals(gallons,liters);
     }
+
+    @Test
+    void add() {
+        Quantity liters = Quantity.createLiters(1);
+        Quantity result = Quantity.createLiters(4.78);
+        Quantity gallons = Quantity.createGallons(1);
+        assertEquals(liters.add(gallons),result);
+    }
 }

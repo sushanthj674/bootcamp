@@ -22,11 +22,19 @@ public class Quantity {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Quantity quantity = (Quantity) o;
-        return Double.compare(units, quantity.units) == 0;
+        return Double.compare(Math.round(units), Math.round(quantity.units)) == 0;
     }
 
     @Override
     public int hashCode() {
         return Objects.hashCode(units);
+    }
+
+    public Quantity add(Quantity q) {
+        System.out.println(q.units);
+        System.out.println(units);
+        System.out.println(q.units+units);
+        return  new Quantity(q.units+units);
+
     }
 }
